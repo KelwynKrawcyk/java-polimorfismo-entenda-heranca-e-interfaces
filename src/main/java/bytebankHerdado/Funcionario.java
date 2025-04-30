@@ -4,10 +4,34 @@ public class Funcionario{
     private String nome;
     private String cpf;
     private double salario;
+    private int tipo = 0; //0 - Funcionario comun, 1 - gerente, 2 - diretor
+    private int senha;
+
+    public boolean autentica(int senha){
+        if(this.senha == senha){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     //metodos
-    public double getBonificacao(){
-        return this.salario * 0.1;
+    public double getBonificacao() {
+        if (this.tipo == 0) {
+            return this.salario * 0.1;
+        } else if(this.tipo == 1){
+            return this.salario;
+        } else {
+            return this.salario + 1000;
+        }
+    };
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getTipo() {
+        return tipo;
     }
 
     public String getNome() {
