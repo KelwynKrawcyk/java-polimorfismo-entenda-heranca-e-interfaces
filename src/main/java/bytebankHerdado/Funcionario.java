@@ -3,8 +3,7 @@ package bytebankHerdado;
 public class Funcionario{
     private String nome;
     private String cpf;
-    //publico para os filhos
-    protected double salario;
+    private double salario;
 
     //metodos
     public double getBonificacao() {
