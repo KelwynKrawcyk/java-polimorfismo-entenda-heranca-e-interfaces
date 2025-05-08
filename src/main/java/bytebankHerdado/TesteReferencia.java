@@ -12,9 +12,6 @@ public class TesteReferencia {
         g1.setNome("Joao");
         g1.setSalario(5000);
 
-        Funcionario f = new Funcionario();
-        f.setSalario(2000);
-
         Funcionario ev = new EditorVideo();
         ev.setSalario(2500);
 
