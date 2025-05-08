@@ -22,7 +22,6 @@ public class TesteReferencia {
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g1);
-        controle.registra(f);
         controle.registra(ev);
         controle.registra(ev);
 
