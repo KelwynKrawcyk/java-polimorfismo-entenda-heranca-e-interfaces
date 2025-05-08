@@ -1,6 +1,7 @@
 package bytebankHerdadoConta;
 
 public class Conta {
+
     private double saldo;
     private int agencia;
     private int numero;
@@ -12,7 +13,7 @@ public class Conta {
         System.out.println("O total de contas é " + Conta.total);
         this.agencia = agencia;
         this.numero = numero;
-        this.saldo = 100;
+        //this.saldo = 100;
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
@@ -77,4 +78,5 @@ public class Conta {
     public static int getTotal(){
         return Conta.total;
     }
+
 }
